@@ -51,6 +51,8 @@ C.right = E
 E.right = F
 
 print(Solution().isBalanced(A))
+
+#for what coust
         
 
 
