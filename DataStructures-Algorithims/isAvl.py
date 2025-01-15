@@ -52,7 +52,7 @@ E.right = F
 
 print(Solution().isBalanced(A))
 
-#for what coust
+#for what cause
         
 
 
