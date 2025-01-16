@@ -3,11 +3,21 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+    @classmethod
+    def preOrder(cls, root):
+        if root is None:
+            return
+        print(root.val)
+        cls.preOrder(root.left)
+        cls.preOrder(root.right)
 class Solution:
     def isBalanced(self, root):
 
         sol = self.find_height(root.left)
         sag = self.find_height(root.right)
+
+        root.preOrder(root)
 
         avl = sol - sag
 
